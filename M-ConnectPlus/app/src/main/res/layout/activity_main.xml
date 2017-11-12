@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.dxc.m_connectplus.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bobicon"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:layout_weight="1"
+            android:typeface="sans"/>
+
+        <ImageView
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/refresh"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dip"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:padding="5sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Current Location"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dip"
+            android:textStyle="normal"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/latlng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Place : Gate way of India\nLatitude  : 18.9220 \nLongitude  : 72.8347"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18dip"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_atmrecomender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:background="@color/colorPrimaryDark"
+        android:text="ATM Recomender"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        android:onClick="@drawable/list_selector"/>
+
+    <TextView
+        android:id="@+id/txt_atmrecomender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_marginTop="8sp"/>
+
+    <LinearLayout
+        android:id="@+id/atmlist"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/cellshape"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/slno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Slno"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000"></LinearLayout>
+
+        <TextView
+            android:id="@+id/atmname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ATM Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000"></LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        android:layout_marginTop="8sp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector"
+           ></ListView>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+bankapi\r\integretion\LambdaPredict.class
+bankapi\r\integretion\WaitingTimePrediction.class
+bankapi\r\integretion\DecisionTreeTrain.class
+bankapi\r\integretion\LambdaTrain.class
+bankapi\atm\rest\services\RServices.class
+bankapi\r\integretion\DecisionTreePredict.class
+banlapi\atm\service\BOBAtmApiServiceforR.class

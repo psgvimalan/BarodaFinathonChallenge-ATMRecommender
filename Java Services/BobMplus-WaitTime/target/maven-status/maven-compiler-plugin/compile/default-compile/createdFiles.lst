@@ -1,0 +1,15 @@
+bankapi\r\integretion\WaitingTimePrediction.class
+bankapi\atm\ATM.class
+bankapi\atm\rest\services\RServices.class
+bankapi\atm\Elements.class
+bankapi\atm\GoogMatrixRequestJava.class
+bankapi\atm\Distance.class
+bankapi\r\integretion\LambdaPredict.class
+bankapi\r\integretion\DecisionTreeTrain.class
+bankapi\r\integretion\LambdaTrain.class
+bankapi\atm\Duration.class
+bankapi\r\integretion\DecisionTreePredict.class
+bankapi\atm\AtmStatus.class
+bankapi\atm\DistancePojo.class
+bankapi\atm\Rows.class
+bankapi\atm\service\BOBAtmApiServiceforR.class
